@@ -20,7 +20,7 @@ const animalSchema = new mongoose.Schema({
 
 
 // config Animal
-const Animals = mongoose.model('animals', animalSchema);
+const Animal = mongoose.model('animals', animalSchema);
 
 // validate animal
 function validateAnimal(animal) {

@@ -1,0 +1,38 @@
+2021-10-08 11:36:59 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [32minfo[39m: Listening on port 3000...
+2021-10-08 11:36:59 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [31merror[39m: MongoParseError: option usefindandmodify is not supported
+    at Object.parseOptions (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongodb\lib\connection_string.js:291:15)
+    at new MongoClient (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongodb\lib\mongo_client.js:62:46)
+    at C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\connection.js:779:16
+    at new Promise (<anonymous>)
+    at NativeConnection.Connection.openUri (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\connection.js:776:19)
+    at C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\index.js:329:10
+    at C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\index.js:1150:10)
+2021-10-08 11:38:11 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [32minfo[39m: Listening on port 3000...
+2021-10-08 11:38:11 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [31merror[39m: MongoParseError: option usefindandmodify is not supported
+    at Object.parseOptions (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongodb\lib\connection_string.js:291:15)
+    at new MongoClient (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongodb\lib\mongo_client.js:62:46)
+    at C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\connection.js:779:16
+    at new Promise (<anonymous>)
+    at NativeConnection.Connection.openUri (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\connection.js:776:19)
+    at C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\index.js:329:10
+    at C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\node_modules\mongoose\lib\index.js:1150:10)
+2021-10-08 11:38:30 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [32minfo[39m: Listening on port 3000...
+2021-10-08 11:38:31 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [32minfo[39m: Connected to mongodb!

@@ -1,0 +1,86 @@
+
+2021-10-08 11:28:04 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [31merror[39m: Error: Cannot find module './middleware/error'
+Require stack:
+- C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:925:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:769:27)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\index.js:10:16)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)
+2021-10-08 11:29:32 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [31merror[39m: Error: Cannot find module '../middleware/auth'
+Require stack:
+- C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\routes\users.js
+- C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:925:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:769:27)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\routes\users.js:1:14)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+2021-10-08 11:30:02 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [31merror[39m: Error: Cannot find module './middleware/error'
+Require stack:
+- C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:925:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:769:27)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\index.js:10:16)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)
+2021-10-08 11:30:17 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [31merror[39m: ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\models\user.js:8:23)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\routes\users.js:4:32)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+2021-10-08 11:30:27 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [31merror[39m: ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\models\user.js:8:23)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\routes\users.js:4:32)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+2021-10-08 11:30:58 [function createFormatWrap(opts) {
+    return new Format(opts);
+  }] [31merror[39m: ReferenceError: Animal is not defined
+    at Object.<anonymous> (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\models\animal.js:44:25)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\mxmx6\OneDrive\Jun-current\projects\Animal-adoption-system\adoption-app\backend\routes\animals.js:3:36)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)

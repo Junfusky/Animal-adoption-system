@@ -1,1 +1,110 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '~@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$teal-palette: (
+  50: #e0f2f1,
+  100: #b2dfdb,
+  200: #80cbc4,
+  300: #4db6ac,
+  400: #26a69a,
+  500: #009688,
+  600: #00897b,
+  700: #00796b,
+  800: #00695c, 
+  900: #004d40,
+  A100: #a7ffeb,
+  A200: #64ffda,
+  A400: #1de9b6,
+  A700: #00bfa5,
+);
+
+$orange-palette: (
+  50: #FFF3E0,
+  100: #FFE0B2,
+  200: #FFCC80,
+  300: #FFB74D,
+  400: #FFA726,
+  500: #FF9800,
+  600: #FB8C00,
+  700: #F57C00,
+  800: #EF6C00, 
+  900: #E65100,
+  A100: #FFD180,
+  A200: #FFAB40,
+  A400: #FF9100,
+  A700: #FF6D00,
+);
+
+$brown-palette: (
+  50: #EFEBE9,
+  100: #D7CCC8,
+  200: #BCAAA4,
+  300: #A1887F,
+  400: #8D6E63,
+  500: #795548,
+  600: #6D4C41,
+  700: #5D4037,
+  800: #4E342E, 
+  900: #3E2723,
+);
+
+$adoption-app-primary: mat.define-palette(mat.$teal-palette, 500, 200, 700);
+$adoption-app-accent: mat.define-palette(mat.$orange-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$adoption-app-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$adoption-app-theme: mat.define-light-theme((
+  color: (
+    primary: $adoption-app-primary,
+    accent: $adoption-app-accent,
+    warn: $adoption-app-warn,
+  )
+));
+
+@include mat.all-component-themes($adoption-app-theme);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($adoption-app-theme);
+@include mat.button-color($adoption-app-theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@400;500;600;700;800;900&display=swap');
+
+$primaryColor500: #009688;
+$primaryColor800: #00695C;
+$btnColor500: #FF9800;
+$btnColor300: #FFB74D;
+
+
+
+*,
+*::after,
+*::before {
+  font-family: 'Georama', Roboto, "Helvetica Neue", sans-serif;
+  font-size: 1.6rem; 
+}
+html{ font-size: 62.5%; }
+html, body { height: 100%; }
+body { 
+  margin: 0; 
+  padding: 0; 
+  min-width: 768px;
+  background-color: whitesmoke;
+}

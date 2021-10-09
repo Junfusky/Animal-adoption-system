@@ -1,0 +1,60 @@
+$primaryColor500: #009688;
+$primaryColor800: #00695C;
+
+
+.header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        margin-left: 40px;
+        font-size: 2.3rem;
+        cursor: pointer;
+    }
+    span:hover {
+        text-decoration: underline;
+    }
+
+    .header-icon {
+        width: 250px;
+    
+        button {
+            height: 50px;
+            font-size: 1.8rem;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            border-radius: 5px;
+        
+            .fas {
+                margin-right: 5px;
+            }
+        }
+        
+        button:hover {
+            background-color: $primaryColor500;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer {
+    height: 100px;
+    background-color: $primaryColor800;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+    .icon-list {
+        display: flex;
+        justify-content: space-around;
+    }
+}

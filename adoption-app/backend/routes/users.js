@@ -95,7 +95,7 @@ router.patch('/:id', async (req, res) => {
         await User.findByIdAndUpdate(req.params.id, {isAdmin: req.body.isAdmin}, {new:true});
     }
     
-    res.send();
+    res.send('Successfuly updated!');
 })
 
 // delete a user

@@ -1,1 +1,36 @@
-<p>home works!</p>
+<header class="header"></header>
+<div class="nav-container">
+    <form id="search-animal">
+      <input
+        type="text"
+        placeholder="Enter ZIP to find"
+        name="searchZip"
+        [(ngModel)]="searchZip"
+        (keyup.enter)="searchByZip()"
+      />
+    </form>
+    <mat-toolbar id="nav" color="primary">
+      <span (click)="showDogList()"
+      ><fa-icon class="fas icon" [icon]="faDog"></fa-icon>Find a Dog</span
+      >
+      <span (click)="showCatList()"
+      ><fa-icon class="fas icon" [icon]="faCat"></fa-icon>Find a Cat</span
+      >
+    </mat-toolbar>
+  </div>
+
+  <div class="content-container">
+    <div class="text-content"
+    *ngFor="let news of newsList">
+        <img src="{{news.img}}" alt="Picture">
+        <div>
+            <p>{{news.des}}</p>
+            <a href="{{news.src}}" target="_blank">{{news.src}}</a>
+        </div>
+        
+    </div>
+    <div class="slogan">
+      <h1>Find your fluffy friend today!</h1>
+    </div>
+  </div>
+  

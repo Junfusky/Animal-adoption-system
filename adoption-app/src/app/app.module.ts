@@ -16,6 +16,7 @@ import { AnimalDetailComponent } from './components/animal-detail/animal-detail.
 import { LoginComponent } from './components/login/login.component';
 import { AddAnimalComponent } from './components/add-animal/add-animal.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AddUserComponent } from './components/add-user/add-user.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

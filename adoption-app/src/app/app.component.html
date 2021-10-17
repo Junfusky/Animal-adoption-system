@@ -1,16 +1,17 @@
 <header class="header-toolbar">
   <mat-toolbar>
     <span [routerLink]="['home']">Home</span>
-    <span>Adoptable Animals</span>
+    <span [routerLink]="['animal-list']">Adoptable Animals</span>
     <span>DashBoard</span>
   </mat-toolbar>
   <div class="header-icon">
-    <button mat-button *ngIf="userLogin; else showLogin">
+    <button mat-button *ngIf="userLogin; else showLogin"
+    (click)="logout()">
       <fa-icon class="fas icon" [icon]="faUser"></fa-icon>
       Logout
     </button>
     <ng-template #showLogin>
-      <button mat-button>
+      <button mat-button (click)="goToLogin()">
         <fa-icon class="fas icon" [icon]="faUser"></fa-icon>
         User Login/Sign up
       </button>

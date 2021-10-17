@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
-  homepageNews: Object[] = [
+  homepageNews: {img: String, des: String, src: String}[] = [
     {
       img: "https://foothillsanimalshelter.org/wp-content/uploads/2021/01/Adoption-General-Images.jpg",
       des: "Dogs and cats are by far the most loved animals across the board, receiving much more attention than other domestic animals. According to a survey conducted by American Pet Products Association (APPA) through 2019 to 2020, 84.9 million of households in the United States own a pet. Amongthem, about 50% of the households have at least one dog, and about 34% have at least one cat. According to their current statistics, there are 6.5 million cats and dogs entering shelters annually, and 3.2 million of them were luckily adopted.",

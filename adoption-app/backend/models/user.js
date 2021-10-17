@@ -1,4 +1,6 @@
 // require packages
+const config = require('config');
+const jwt = require('jsonwebtoken');
 const Joi = require('joi');
 const mongoose = require('mongoose');
 
@@ -15,6 +17,11 @@ const userSchema = new mongoose.Schema({
     isAdmin: {type: Boolean, required: true}
 })
 
+userSchema.methods.generateAuthToken = function() {
+    const token = jwt.sign({_id: this._id, isAdmin: this.isAdmin}, config.get('jwtPrivateKey'), {expiresIn: '24h'});
+    return token;
+}
+
 // config User
 const User = mongoose.model('users', userSchema);
 
@@ -26,8 +33,8 @@ function validateUser(user) {
         email: Joi.string().required().email(),
         username: Joi.string().required().max(50),
         password: Joi.string().required().min(6),
-        phone: Joi.string().length(10),
-        applyList: Joi.array().max(5),
+        phone: Joi.string().length(10).optional(),
+        applyList: Joi.array().max(5).optional(),
         isAdmin: Joi.boolean().required()
     })
     return schema.validate(user);
